@@ -15,4 +15,4 @@ MQTT_OPTS="--my-mqtt-client-id=$MQTT_CLIENTID --my-controller-url-address=$MQTT_
 cd $APPDIR
 ./configure --spi-spidev-device=/dev/spidev0.0 --my-transport=$MYSGW_TRN --my-gateway=$MYSGW_TYPE --my-rf24-channel=$MYSGW_CHANNEL $MQTT_OPTS
 make && make install
-./bin/mysgw --daemon
+./bin/mysgw --debug
